@@ -27,7 +27,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
 
 </head>
 
@@ -64,13 +64,12 @@
         <br>
     </div>
     <div class="container">
-            
+        <h3 style="padding:40px 0;">NATURAL GROUND COVER</h3>
+        <p class="maintext">In contrast natural ground cover absorbs stormwater and filters it through trees' established root systems resulting
+            in less than <strong>10 percent runoff.</strong> Leaves also capture rainfall like tiny cups, and through evapotranspiration,
+            cool surrounding air.</p>
         <div class="naturalgroundcover">
             <br>
-            <h3 style="padding:40px 0;">NATURAL GROUND COVER</h3>
-            <p class="maintext">In contrast natural ground cover absorbs stormwater and filters it through trees' established root systems resulting
-                    in less than <strong>10 percent runoff.</strong> Leaves also capture rainfall like tiny cups, and through evapotranspiration,
-                    cool surrounding air.</p>
             <figure class="natural-ground-cover">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 984 630">
                     <defs>
@@ -456,16 +455,16 @@
             var controller = new ScrollMagic.Controller();
 
 
-            var twentyfive = $(".Twentyfive_Deep_Infiltration");
-            var twentyfiveshallow = $(".Twentyfive_Shallow_Infiltration");
-            var rain = $(".Rain");
-            var runoff = $(".Runoff");
-            var deepinfiltration = $(".Deep_Infiltration");
-            var shallowinfiltration = $(".Shallow_Infiltration");
-            var tenpercent = $(".Ten_Percent_Runoff");
-            var fortypercent = $(".Forty_Percent_Evapotranspiration");
-            var evapotranspiration = $(".Evapotranspiration")
-            var clouds = $(".Clouds")
+            var twentyfive = $(".Twentyfive_Deep_Infiltration"),
+                twentyfiveshallow = $(".Twentyfive_Shallow_Infiltration"),
+                rain = $(".Rain"),
+                 runoff = $(".Runoff"),
+                deepinfiltration = $(".Deep_Infiltration"),
+                shallowinfiltration = $(".Shallow_Infiltration"),
+                tenpercent = $(".Ten_Percent_Runoff"),
+                fortypercent = $(".Forty_Percent_Evapotranspiration"),
+                evapotranspiration = $(".Evapotranspiration"),
+                clouds = $(".Clouds");
 
             //build tween
             var tweenone = TweenMax.fromTo(twentyfive, 1, { x: -440 }, { x: 0 });
