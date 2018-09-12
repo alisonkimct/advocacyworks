@@ -40,6 +40,9 @@
   p.maintext {
       max-width: 700px;
       margin: 1em auto;
+      font-size: 1.2em;
+      font-weight: 100;
+      line-height: 2;
   }
 
   header.clearfix.index {
