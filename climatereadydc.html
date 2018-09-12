@@ -10,6 +10,10 @@
 
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.10/css/mdb.min.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,14 +24,47 @@
 
         <link href="css/advocacy-works-styles.css" rel="stylesheet">
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>-->
+
+        <style>
+            #myVideo {
+    /*position: fixed;*/
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+        .action-label.one {animation: MoveUpDownR 2.3s .1s ease infinite;}
+        .action-label.two {animation: MoveUpDownR 2.3s .4s ease infinite; background-color:#88cade;}
+        .action-label.three {animation: MoveUpDownR 2.3s .8s ease infinite; background-color:#eecc35;}
+        .action-label.four {animation: MoveUpDownR 2.3s 1.2s ease infinite; background-color:#006224;}
+
+        @keyframes MoveUpDownR {
+                            0% {
+                                transform: translateY(0px);
+                            }
+                            
+
+                            50% {transform: translateY(5px);
+                            }
+
+                            100% {transform: translateY(0px);
+                            }
+                        }
+        </style>
 
 </head>
 
@@ -371,6 +408,7 @@
     <div class="fit-image">
         <img src="images/leaf-water-drop-3.jpg">
     </div>
+    
     <div class="container content featured-developments">
         <h2 style="text-align:center;">ACTION:
             <br>CLIMATE READY DC</h2>
@@ -384,9 +422,9 @@
     <div style="padding-top: 3em;" class="container">
         <!--Row 1-->
         <div class="row">
-            <div class="col-lg-6 col-sm-12">
-                <div class="action-content" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url(images/raingarden.jpg);">
-                    <div class="action-label">
+            <div class="col-lg-6 col-sm-12 wow slideInLeft">
+                <div class="action-content z-depth-5" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url(images/raingarden.jpg);">
+                    <div class="action-label one">
                         <p>ACTION 1</p>
                     </div>
                     <div class="action-description">
@@ -394,9 +432,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12">
-                <div class="action-content" style="background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url(images/kennedy-center.jpg);">
-                    <div class="action-label">
+            <div class="col-lg-6 col-sm-12 wow slideInRight">
+                <div class="action-content z-depth-5" style="background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url(images/kennedy-center.jpg);">
+                    <div class="action-label two">
                         <p>ACTION 2</p>
                     </div>
                     <div class="action-description">
@@ -404,9 +442,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12">
-                <div class="action-content" style="background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url(images/street-trees.jpg);">
-                    <div class="action-label">
+            <div class="col-lg-6 col-sm-12 wow slideInLeft">
+                <div class="action-content z-depth-5" style="background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url(images/street-trees.jpg);">
+                    <div class="action-label three">
                         <p>ACTION 3</p>
                     </div>
                     <div class="action-description">
@@ -414,9 +452,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12">
-                <div class="action-content" style="background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url(images/plant-trees-along-riverbanks.jpg);">
-                    <div class="action-label">
+            <div class="col-lg-6 col-sm-12 wow slideInRight">
+                <div class="action-content z-depth-5" style="background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url(images/plant-trees-along-riverbanks.jpg);">
+                    <div class="action-label four">
                         <p>ACTION 4</p>
                     </div>
                     <div class="action-description">
@@ -432,7 +470,19 @@
                 document.write(new Date().getFullYear());
             </script> Casey Trees. All Rights Reserved.</p>
     </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>-->
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.10/js/mdb.min.js"></script>
+        <script type="text/javascript" src="https://caseytrees.org/wp-content/uploads/2018/04/wow.min_.js"></script>
 
 
     <script>
@@ -464,7 +514,7 @@
                 tenpercent = $(".Ten_Percent_Runoff"),
                 fortypercent = $(".Forty_Percent_Evapotranspiration"),
                 evapotranspiration = $(".Evapotranspiration"),
-                clouds = $(".Clouds");
+                clouds = $(".Clouds")
 
             //build tween
             var tweenone = TweenMax.fromTo(twentyfive, 1, { x: -440 }, { x: 0 });
@@ -585,9 +635,22 @@
                 .addTo(controller);
 
 
-
-
         })(jQuery);
+
+        new WOW().init();
+
+        var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
     </script>
 
 </body>
